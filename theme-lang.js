@@ -3,8 +3,8 @@
 // 1. Language Data
 const translations = {
     es: {
-        "nav.usa": "USA: +1 (786) 529-0449",
-        "nav.hnd": "HND: +504 9502-7264",
+        "nav.usa": "USA: +1 (786) 365-1165",
+        "nav.hnd": "HND: +504 9684-1000",
         "hero.title1": "SI TIENE MOTOR, ",
         "hero.title2": "LO IMPORTAMOS!",
         "hero.subtitle1": "Soluciones integrales para llevar lo que necesitas, ",
@@ -36,8 +36,8 @@ const translations = {
         "footer.rights": "© 2026 AUTOTRADE MIAMI LLC. Todos los derechos reservados."
     },
     en: {
-        "nav.usa": "USA: +1 (786) 529-0449",
-        "nav.hnd": "HND: +504 9502-7264",
+        "nav.usa": "USA: +1 (786) 365-1165",
+        "nav.hnd": "HND: +504 9684-1000",
         "hero.title1": "IF IT HAS AN ENGINE, ",
         "hero.title2": "WE IMPORT IT!",
         "hero.subtitle1": "Comprehensive solutions to take what you need, ",
