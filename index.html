@@ -11,7 +11,7 @@
     <meta name="description" content="Especialistas en compra de vehículos en subastas de USA, servicio de grúa, aduanas y mudanzas a Honduras, Guatemala y El Salvador.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -23,8 +23,12 @@
                 <div class="logo-text">AUTOTRADE MIAMI LLC</div>
             </div>
             <div class="nav-contact">
-                <a href="https://wa.me/17865290449" class="btn btn-outline"><i class="fa-solid fa-phone"></i> USA: +1 (786) 529-0449</a>
-                <a href="https://wa.me/50495027264" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> HND: +504 95027264</a>
+                <div class="theme-lang-toggles">
+                    <button id="themeToggle" class="toggle-btn" title="Cambiar Tema"><i class="fa-solid fa-moon"></i></button>
+                    <button id="langToggle" class="toggle-btn lang-btn" title="Cambiar Idioma">EN</button>
+                </div>
+                <a href="https://wa.me/17865290449" class="btn btn-outline" data-i18n="nav.usa"><i class="fa-solid fa-phone"></i> USA: +1 (786) 529-0449</a>
+                <a href="https://wa.me/50495027264" class="btn btn-primary" data-i18n="nav.hnd"><i class="fa-brands fa-whatsapp"></i> HND: +504 9502-7264</a>
             </div>
         </div>
     </header>
@@ -36,12 +40,12 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>SI TIENE MOTOR, <span class="highlight">LO IMPORTAMOS!</span></h1>
-            <p class="subtitle">Soluciones integrales para llevar lo que necesitas, <strong>donde lo necesitas.</strong></p>
+            <h1><span data-i18n="hero.title1">SI TIENE MOTOR, </span><span class="highlight" data-i18n="hero.title2">LO IMPORTAMOS!</span></h1>
+            <p class="subtitle"><span data-i18n="hero.subtitle1">Soluciones integrales para llevar lo que necesitas, </span><strong data-i18n="hero.subtitle2">donde lo necesitas.</strong></p>
             <div class="coverage-badges">
-                <span class="badge"><img src="https://flagcdn.com/24x18/hn.png" alt="Honduras"> Honduras</span>
-                <span class="badge"><img src="https://flagcdn.com/24x18/gt.png" alt="Guatemala"> Guatemala</span>
-                <span class="badge"><img src="https://flagcdn.com/24x18/sv.png" alt="El Salvador"> El Salvador</span>
+                <span class="badge" data-i18n="hero.hn"><img src="https://flagcdn.com/24x18/hn.png" alt="Honduras"> Honduras</span>
+                <span class="badge" data-i18n="hero.gt"><img src="https://flagcdn.com/24x18/gt.png" alt="Guatemala"> Guatemala</span>
+                <span class="badge" data-i18n="hero.sv"><img src="https://flagcdn.com/24x18/sv.png" alt="El Salvador"> El Salvador</span>
             </div>
         </div>
     </section>
@@ -50,7 +54,7 @@
     <section class="services section-padding">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Nuestros Servicios</h2>
+                <h2 data-i18n="services.title">Nuestros Servicios</h2>
                 <div class="divider"></div>
             </div>
             
@@ -58,29 +62,29 @@
                 <!-- Service 1 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-gavel"></i></div>
-                    <h3>Compra de Vehículos en Subastas de Estados Unidos</h3>
-                    <p>Compramos por ti en las mejores subastas de Estados Unidos al mejor precio, asegurando una inversión inteligente y transparente.</p>
+                    <h3 data-i18n="services.s1.title">Compra de Vehículos en Subastas de Estados Unidos</h3>
+                    <p data-i18n="services.s1.desc">Compramos por ti en las mejores subastas de Estados Unidos al mejor precio, asegurando una inversión inteligente y transparente.</p>
                 </div>
 
                 <!-- Service 2 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-truck-pickup"></i></div>
-                    <h3>Servicio de Grúa en Todo Estados Unidos</h3>
-                    <p>Recogemos tu vehículo en cualquier estado y lo llevamos de manera segura hasta el puerto de salida para su exportación.</p>
+                    <h3 data-i18n="services.s2.title">Servicio de Grúa en Todo Estados Unidos</h3>
+                    <p data-i18n="services.s2.desc">Recogemos tu vehículo en cualquier estado y lo llevamos de manera segura hasta el puerto de salida para su exportación.</p>
                 </div>
 
                 <!-- Service 3 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Servicio de Aduanas en País de Destino</h3>
-                    <p>Manejamos todo el proceso aduanero en Honduras, Guatemala y El Salvador para que recibas tu vehículo sin complicaciones ni retrasos.</p>
+                    <h3 data-i18n="services.s3.title">Servicio de Aduanas en País de Destino</h3>
+                    <p data-i18n="services.s3.desc">Manejamos todo el proceso aduanero en Honduras, Guatemala y El Salvador para que recibas tu vehículo sin complicaciones ni retrasos.</p>
                 </div>
 
                 <!-- Service 4 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
-                    <h3>Mudanzas desde Estados Unidos</h3>
-                    <p>Llevamos tus pertenencias de forma segura y confiable a Honduras, Guatemala y El Salvador con atención personalizada en cada caja.</p>
+                    <h3 data-i18n="services.s4.title">Mudanzas desde Estados Unidos</h3>
+                    <p data-i18n="services.s4.desc">Llevamos tus pertenencias de forma segura y confiable a Honduras, Guatemala y El Salvador con atención personalizada en cada caja.</p>
                 </div>
             </div>
         </div>
@@ -92,10 +96,10 @@
         <div class="motivational-overlay"></div>
         <div class="container motivational-content">
             <div class="motivational-text">
-                <h2>Tu historia no termina aquí, <br>es solo el comienzo de algo mejor.</h2>
-                <p>Cada desafío te hace más fuerte, cada paso te acerca a tus sueños. Hoy regresas a tu país, pero llevas contigo experiencia, valentía y un futuro lleno de oportunidades.</p>
-                <p class="highlight-text">¡Cree en ti, trabaja por tus metas y construye la vida que tú y tu familia merecen!</p>
-                <h3 class="slogan">¡Tú puedes, nosotros te acompañamos!</h3>
+                <h2 data-i18n="motivational.h2">Tu historia no termina aquí, <br>es solo el comienzo de algo mejor.</h2>
+                <p data-i18n="motivational.p1">Cada desafío te hace más fuerte, cada paso te acerca a tus sueños. Hoy regresas a tu país, pero llevas contigo experiencia, valentía y un futuro lleno de oportunidades.</p>
+                <p class="highlight-text" data-i18n="motivational.p2">¡Cree en ti, trabaja por tus metas y construye la vida que tú y tu familia merecen!</p>
+                <h3 class="slogan" data-i18n="motivational.h3">¡Tú puedes, nosotros te acompañamos!</h3>
             </div>
         </div>
     </section>
@@ -103,13 +107,13 @@
     <!-- Value Proposition Banner -->
     <section class="values-banner">
         <div class="container values-flex">
-            <div class="value-item">
+            <div class="value-item" data-i18n="values.v1">
                 <i class="fa-solid fa-check-circle"></i> Confianza
             </div>
-            <div class="value-item">
+            <div class="value-item" data-i18n="values.v2">
                 <i class="fa-solid fa-handshake"></i> Experiencia
             </div>
-            <div class="value-item">
+            <div class="value-item" data-i18n="values.v3">
                 <i class="fa-solid fa-clock"></i> Compromiso
             </div>
         </div>
@@ -121,24 +125,24 @@
             <div class="footer-brand">
                 <img src="logo.png" alt="AUTOTRADE MIAMI LLC Logo" class="logo-img-small">
                 <h3>AUTOTRADE MIAMI LLC</h3>
-                <p>Tu aliado estratégico en logística e importación automotriz.</p>
+                <p data-i18n="footer.desc">Tu aliado estratégico en logística e importación automotriz.</p>
             </div>
             
             <div class="footer-contact">
-                <h4>Contáctanos</h4>
+                <h4 data-i18n="footer.contact">Contáctanos</h4>
                 <p><i class="fa-brands fa-whatsapp"></i> <strong>Honduras:</strong> +504 9502-7264</p>
                 <p><i class="fa-solid fa-phone"></i> <strong>USA:</strong> +1 (786) 529-0449</p>
             </div>
             
             <div class="footer-coverage">
-                <h4>Cobertura Centroamérica</h4>
+                <h4 data-i18n="footer.coverage">Cobertura Centroamérica</h4>
                 <p>Honduras</p>
                 <p>Guatemala</p>
                 <p>El Salvador</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 AUTOTRADE MIAMI LLC. Todos los derechos reservados.</p>
+            <p data-i18n="footer.rights">&copy; 2026 AUTOTRADE MIAMI LLC. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -147,6 +151,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="app.js?v=4"></script>
+    <script src="theme-lang.js?v=5"></script>
+    <script src="app.js?v=5"></script>
 </body>
 </html>

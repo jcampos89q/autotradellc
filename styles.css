@@ -753,3 +753,116 @@ h1, h2, h3, h4 {
         margin: 0 auto 15px auto;
     }
 }
+/* =========================================
+   Dark Theme
+   ========================================= */
+html.dark-theme {
+    --text-dark: #f0f0f0;
+    --bg-light: #121212;
+    --white: #1e1e1e;
+    --border-color: #333;
+}
+
+html.dark-theme .btn-outline {
+    color: #f0f0f0;
+    border-color: #555;
+}
+
+html.dark-theme .btn-outline:hover {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+}
+
+html.dark-theme .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+html.dark-theme .service-card {
+    background: #1e1e1e;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+html.dark-theme .service-card p {
+    color: #b0b0b0;
+}
+
+html.dark-theme .calculator-section {
+    background-color: #121212;
+}
+
+html.dark-theme .calculator-form {
+    background: #1e1e1e;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    border-top: 5px solid var(--primary-red);
+}
+
+html.dark-theme .form-group label {
+    color: #f0f0f0;
+}
+
+html.dark-theme .form-group input, 
+html.dark-theme .form-group select {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #444;
+}
+
+html.dark-theme .form-group input:focus, 
+html.dark-theme .form-group select:focus {
+    background-color: #1e1e1e;
+    border-color: var(--primary-red);
+}
+
+html.dark-theme .calculator-results {
+    background: #0a0a0a;
+    border: 1px solid #333;
+}
+
+/* Theme & Lang Toggles */
+.theme-lang-toggles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+}
+
+.toggle-btn:hover {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.lang-btn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: auto;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .theme-lang-toggles {
+        margin-right: 0;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+}
