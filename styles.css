@@ -759,8 +759,32 @@ h1, h2, h3, h4 {
 html.dark-theme {
     --text-dark: #f0f0f0;
     --bg-light: #121212;
-    --white: #1e1e1e;
+    /* removed --white override */
     --border-color: #333;
+}
+
+
+html.dark-theme h1, 
+html.dark-theme h2, 
+html.dark-theme h3, 
+html.dark-theme h4 {
+    color: #f0f0f0;
+}
+
+html.dark-theme .service-card h3 {
+    color: #ffffff;
+}
+
+html.dark-theme .service-icon i {
+    color: #ff4d4d;
+}
+
+html.dark-theme .value-item {
+    color: #ffffff;
+}
+
+html.dark-theme .logo-text {
+    color: #f0f0f0;
 }
 
 html.dark-theme .btn-outline {
