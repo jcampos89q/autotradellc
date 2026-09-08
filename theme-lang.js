@@ -12,6 +12,8 @@ const translations = {
         "hero.hn": " Honduras",
         "hero.gt": " Guatemala",
         "hero.sv": " El Salvador",
+        "gallery.title": "Nuestra Experiencia en Acción",
+        "gallery.subtitle": "Un vistazo a nuestro trabajo diario, logística y vehículos listos para exportación.",
         "services.title": "Nuestros Servicios",
         "services.s1.title": "Compra de Vehículos en Subastas de Estados Unidos",
         "services.s1.desc": "Compramos por ti en las mejores subastas de Estados Unidos al mejor precio, asegurando una inversión inteligente y transparente.",
@@ -43,6 +45,8 @@ const translations = {
         "hero.hn": " Honduras",
         "hero.gt": " Guatemala",
         "hero.sv": " El Salvador",
+        "gallery.title": "Our Experience in Action",
+        "gallery.subtitle": "A glimpse of our daily work, logistics, and vehicles ready for export.",
         "services.title": "Our Services",
         "services.s1.title": "Vehicle Purchases at US Auctions",
         "services.s1.desc": "We buy for you at the best US auctions at the best price, ensuring a smart and transparent investment.",
@@ -74,11 +78,9 @@ function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            // Check if element contains HTML (like <br> or <strong>)
             if (translations[lang][key].includes('<br>') || translations[lang][key].includes('<strong>') || translations[lang][key].includes('</i>') || translations[lang][key].includes('<img')) {
                 el.innerHTML = translations[lang][key];
             } else {
-                // If the element has child elements like an icon, we need to preserve them
                 const icon = el.querySelector('i');
                 const img = el.querySelector('img');
                 if (icon) {
@@ -115,10 +117,8 @@ if (langBtn) {
 const themeBtn = document.getElementById('themeToggle');
 const htmlEl = document.documentElement;
 
-// Check saved theme or system preference
 const savedTheme = localStorage.getItem('autotrade_theme');
 const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
 let currentTheme = savedTheme || (systemDark ? 'dark' : 'light');
 
 function applyTheme(theme) {
